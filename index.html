@@ -28,31 +28,82 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="js/script.js" defer></script>
 
-    <script type="application/ld+json">
-    [{
-      "@context": "https://schema.org",
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
       "@type": "ProfilePage",
+      "@id": "https://keboss.de/#webpage",
+      "url": "https://keboss.de",
+      "name": "Keboss | Twitch Streamer & Content Creator aus Berlin",
+      "description": "Die offizielle Webseite des Twitch-Streamers und Content Creators Keboss.",
       "mainEntity": {
-        "@type": "Person",
-        "name": "Keboss",
-        "givenName": "Leon",
-        "alternateName": ["realkeboss", "Keboss_", "Kebo"],
-        "description": "Aufstrebender Twitch-Streamer und Content Creator aus Berlin, bekannt für schrägen Humor und ARC Raiders Gameplay.",
-        "homeLocation": {
-          "@type": "Place",
-          "name": "Berlin, Deutschland"
-        },
-        "url": "https://keboss.de",
-        "knowsAbout": ["ARC Raiders", "Video Gaming", "Live Streaming", "Twitch", "YouTube"],
-        "sameAs": [
-          "https://www.twitch.tv/keboss_",
-          "https://www.youtube.com/@realkeboss",
-          "https://www.instagram.com/realkeboss",
-          "https://www.tiktok.com/@realkeboss"
-        ]
+        "@id": "https://keboss.de/#person"
       }
-    }]
-    </script>
+    },
+    {
+      "@type": "Person",
+      "@id": "https://keboss.de/#person",
+      "name": "Keboss",
+      "givenName": "Leon",
+      "alternateName": ["realkeboss", "keboss_", "Kebo"],
+      "jobTitle": ["Twitch Streamer", "Content Creator"],
+      "description": "Keboss ist ein aufstrebender Twitch-Streamer und Content Creator aus Berlin, bekannt für schrägen Humor und ARC Raiders Gameplay.",
+      "image": {
+        "@type": "ImageObject",
+        "@id": "https://keboss.de/#logo",
+        "url": "https://keboss.de/assets/legende500.jpeg",
+        "caption": "Keboss - Twitch Streamer aus Berlin"
+      },
+      "url": "https://keboss.de",
+      "homeLocation": {
+        "@type": "Place",
+        "name": "Berlin, Deutschland"
+      },
+      "nationality": {
+        "@type": "Country",
+        "name": "Germany"
+      },
+      "knowsAbout": [
+        {
+          "@type": "Thing",
+          "name": "ARC Raiders",
+          "sameAs": "https://www.wikidata.org/wiki/Q110029330" 
+        },
+        {
+          "@type": "Thing",
+          "name": "Twitch",
+          "sameAs": "https://de.wikipedia.org/wiki/Twitch"
+        },
+        {
+          "@type": "Thing",
+          "name": "YouTube",
+          "sameAs": "https://de.wikipedia.org/wiki/YouTube"
+        },
+        {
+          "@type": "Thing",
+          "name": "Live Streaming",
+          "sameAs": "https://de.wikipedia.org/wiki/Livestreaming"
+        },
+        {
+          "@type": "Thing",
+          "name": "Video Gaming",
+          "sameAs": "https://de.wikipedia.org/wiki/Computerspiel"
+        }
+      ],
+      "sameAs": [
+        "https://www.wikidata.org/wiki/Q138512414",
+        "https://www.twitch.tv/keboss_",
+        "https://www.youtube.com/@realkeboss",
+        "https://www.instagram.com/realkeboss",
+        "https://www.tiktok.com/@realkeboss",
+        "https://discord.gg/UnzacThtCu"
+      ]
+    }
+  ]
+}
+</script>
 </head>
 <body class="text-zinc-100 min-h-screen flex flex-col items-center justify-center p-4 selection:bg-zinc-700 selection:text-white antialiased">
 
